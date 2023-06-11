@@ -11,7 +11,23 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*",
+        "dist/*",
+        ""
+      ],
+      "components/*":[
+        "src/components/*"
+      ],
+      "context/*": [
+        "src/context/*"
+      ],
+      "utils/*":[
+        "src/utils/*"
+      ]
+    },
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
