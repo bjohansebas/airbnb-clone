@@ -1,11 +1,11 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Loading } from './Components/Loading'
+import { Loading } from 'components/Loading'
 
 const router = createBrowserRouter([
   {
     path: '/',
     async lazy () {
-      const { Root } = await import('./Components/Root')
+      const { Root } = await import('./components/Root')
       return { Component: Root }
     },
     children: [

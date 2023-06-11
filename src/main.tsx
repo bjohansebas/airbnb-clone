@@ -5,6 +5,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import '@fontsource/manrope'
 import '@fontsource/manrope/800.css'
 import '@fontsource/manrope/700.css'
+import '@fontsource/manrope/600.css'
 import '@fontsource/manrope/500.css'
 
 import { App } from './App'

@@ -10,7 +10,7 @@ export interface PhoneProps extends FormControlProps {
 
 export const PhoneInput = ({ label, country, phone, setPhone, ...styles }: PhoneProps): JSX.Element => {
   return (
-    <FormControl position="relative" border="1px solid" borderColor="gray.300" {...styles} height="59px" label='ddasdas'>
+    <FormControl position="relative" border="1px solid" borderColor="gray.300" {...styles} height="59px" label={label}>
       <FormLabel position="absolute" marginBottom="none" marginInlineEnd="none" top="2px" >
         <Text fontSize={16} color="ink.standard" transform="scale(0.75)">
           {label}
