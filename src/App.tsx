@@ -22,6 +22,13 @@ const router = createBrowserRouter([
           const { LoginPage } = await import('./Pages/Login')
           return { Component: LoginPage }
         }
+      },
+      {
+        path: '*',
+        async lazy () {
+          const { NotFoundPage } = await import('./Pages/404')
+          return { Component: NotFoundPage }
+        }
       }
     ]
   }
